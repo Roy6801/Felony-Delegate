@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#09123b"
+    android:orientation="vertical"
+    tools:context=".ClassifiedActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5sp"
+        android:background="@drawable/textview_shape"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/getComplaint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            android:background="@drawable/scrollview_shape"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/listComplaint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/getSuspicion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            android:background="@drawable/scrollview_shape"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/listSuspicion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/updateWantedList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            android:background="@drawable/scrollview_shape"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/criminalPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:scaleType="fitCenter"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/uploadCriminalPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="@string/uploadPhoto"
+                android:background="@drawable/textview_shape"
+                android:layout_margin="5sp"
+                android:textColor="#FFEB3B"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:fontFamily="@font/allerta"/>
+
+            <EditText
+                android:id="@+id/firstName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10sp"
+                android:padding="15sp"
+                android:hint="@string/fName"
+                android:background="@drawable/textview_shape"
+                android:inputType="textPersonName"
+                android:textColor="#FFC107"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/middleName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10sp"
+                android:padding="15sp"
+                android:hint="@string/mName"
+                android:background="@drawable/textview_shape"
+                android:inputType="textPersonName"
+                android:textColor="#FFC107"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/lastName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10sp"
+                android:padding="15sp"
+                android:hint="@string/lName"
+                android:background="@drawable/textview_shape"
+                android:inputType="textPersonName"
+                android:textColor="#FFC107"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10sp"
+                android:padding="15sp"
+                android:hint="@string/age"
+                android:background="@drawable/textview_shape"
+                android:inputType="textPersonName"
+                android:textColor="#FFC107"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/getUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            android:background="@drawable/scrollview_shape"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/listUser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5sp"
+        android:background="@drawable/textview_shape">
+
+        <Button
+            android:id="@+id/goback"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/scrollview_shape"
+            android:layout_margin="5sp"
+            android:text="@string/go_back"
+            android:textSize="30sp"
+            android:textColor="#FFEB3B"
+            android:fontFamily="@font/allerta"/>
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/scrollview_shape"
+            android:layout_margin="5sp"
+            android:text="@string/done"
+            android:textSize="30sp"
+            android:textColor="#FFEB3B"
+            android:fontFamily="@font/allerta"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#09123b"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5sp"
+        android:background="@drawable/textview_shape"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/activityComplaint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            android:background="@drawable/scrollview_shape"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/reportTheft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reportTheft"
+                android:background="@drawable/textview_shape"
+                android:padding="10sp"
+                android:layout_margin="10sp"
+                android:textSize="30sp"
+                android:textColor="#FFEB3B"
+                android:fontFamily="@font/allerta"/>
+
+            <CheckBox
+                android:id="@+id/reportViolence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reportViolence"
+                android:background="@drawable/textview_shape"
+                android:padding="10sp"
+                android:layout_margin="10sp"
+                android:textSize="30sp"
+                android:textColor="#FFEB3B"
+                android:fontFamily="@font/allerta"/>
+
+            <CheckBox
+                android:id="@+id/reportHarass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reportHarass"
+                android:background="@drawable/textview_shape"
+                android:padding="10sp"
+                android:layout_margin="10sp"
+                android:textSize="30sp"
+                android:textColor="#FFEB3B"
+                android:fontFamily="@font/allerta"/>
+
+            <EditText
+                android:id="@+id/reportDescriptionCrime"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="@string/description"
+                android:background="@drawable/textview_shape"
+                android:padding="10sp"
+                android:layout_margin="10sp"
+                android:textSize="30sp"
+                android:textColor="#FFEB3B"
+                android:fontFamily="@font/allerta"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/activitySuspicion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            android:fillViewport="true"
+            android:background="@drawable/scrollview_shape"
+            android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:id="@+id/setPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/uploadPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/uploadPhoto"
+                android:background="@drawable/textview_shape"
+                android:padding="10sp"
+                android:layout_margin="10sp"
+                android:textSize="30sp"
+                android:textColor="#FFEB3B"
+                android:fontFamily="@font/allerta"/>
+
+            <Button
+                android:id="@+id/uploadVideo"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/uploadVideo"
+                android:background="@drawable/textview_shape"
+                android:padding="10sp"
+                android:layout_margin="10sp"
+                android:textSize="30sp"
+                android:textColor="#FFEB3B"
+                android:fontFamily="@font/allerta"/>
+
+            <EditText
+                android:id="@+id/reportDescriptionSuspicion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="@string/description"
+                android:background="@drawable/textview_shape"
+                android:padding="10sp"
+                android:layout_margin="10sp"
+                android:textSize="30sp"
+                android:textColor="#FFEB3B"
+                android:fontFamily="@font/allerta"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/activityWantedList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            android:background="@drawable/scrollview_shape"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/WantedList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5sp"
+        android:background="@drawable/textview_shape">
+
+        <Button
+            android:id="@+id/go_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/scrollview_shape"
+            android:layout_margin="5sp"
+            android:text="@string/go_back"
+            android:textSize="30sp"
+            android:textColor="#FFEB3B"
+            android:fontFamily="@font/allerta"/>
+
+        <Button
+            android:id="@+id/report_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/scrollview_shape"
+            android:layout_margin="5sp"
+            android:text="@string/report"
+            android:textSize="30sp"
+            android:textColor="#FFEB3B"
+            android:fontFamily="@font/allerta"/>
+
+    </LinearLayout>
+</LinearLayout>

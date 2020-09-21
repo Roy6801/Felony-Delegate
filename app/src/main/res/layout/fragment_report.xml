@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5sp"
+    android:background="@drawable/textview_shape"
+    android:orientation="vertical"
+    tools:context=".Report">
+
+        <Button
+            android:id="@+id/reportSuspicion"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/scrollview_shape"
+            android:layout_margin="20sp"
+            android:gravity="center"
+            android:text="@string/reportSuspicion"
+            android:textStyle="bold"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/reportWantedList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/scrollview_shape"
+            android:layout_margin="20sp"
+            android:gravity="center"
+            android:text="@string/reportWantedList"
+            android:textStyle="bold"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/reportComplaint"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/scrollview_shape"
+        android:layout_margin="20sp"
+        android:gravity="center"
+        android:text="@string/reportComplaint"
+        android:textStyle="bold"
+        android:textColor="#FFEB3B"
+        android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/reportSOS"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/scrollview_shape"
+            android:layout_margin="20sp"
+            android:gravity="center"
+            android:text="@string/reportSOS"
+            android:textStyle="bold"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp"/>
+
+    </LinearLayout>

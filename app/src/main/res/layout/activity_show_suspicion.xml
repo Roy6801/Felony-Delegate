@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#09123b"
+    tools:context=".ShowSuspicion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/textview_shape"
+        android:layout_margin="10sp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/showUser"
+            android:background="@drawable/scrollview_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:padding="10sp"
+            android:text="@string/userInfo"
+            android:textSize="25sp"
+            android:textColor="#FFEB3B"
+            android:textStyle="bold"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/showSuspicion"
+            android:background="@drawable/scrollview_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:padding="10sp"
+            android:textSize="25sp"
+            android:textColor="#FFEB3B"
+            android:textStyle="bold"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/showImage"
+            android:background="@drawable/scrollview_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:padding="10sp"
+            android:text="@string/showImage"
+            android:textSize="25sp"
+            android:textColor="#FFEB3B"
+            android:textStyle="bold"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/showVideo"
+            android:background="@drawable/scrollview_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:padding="10sp"
+            android:text="@string/showVideo"
+            android:textSize="25sp"
+            android:textColor="#FFEB3B"
+            android:textStyle="bold"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5sp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imageShow"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5sp"
+            android:scaleType="fitCenter"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</LinearLayout>

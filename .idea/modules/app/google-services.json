@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "261017861966",
+    "firebase_url": "https://felony-delegate.firebaseio.com",
+    "project_id": "felony-delegate",
+    "storage_bucket": "felony-delegate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261017861966:android:4e0728111b4ebaf7e4a81f",
+        "android_client_info": {
+          "package_name": "com.project.felonydelegate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "261017861966-c49een9oikt374kvpatd193mnp0ngf1b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.felonydelegate",
+            "certificate_hash": "3cd44e38e15371354f2e9bfde28892debe8715f6"
+          }
+        },
+        {
+          "client_id": "261017861966-jqdc59svcupj2vqcgt9m3ef8reptg0cf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQMdYAUMTr8BWtEEGHCZ7atWuEQVn6494"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "261017861966-jqdc59svcupj2vqcgt9m3ef8reptg0cf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
